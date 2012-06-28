@@ -1,0 +1,127 @@
+/***** Formatting *****/
+
+/***** Fonts *****
+font-family: 'Press Start 2P', cursive;
+font-family: 'Play', sans-serif; */
+
+body {
+	background-image: url("../images/bg_image.jpg");
+	width: 960px;
+	margin: 0 auto;
+}
+
+/***** Header *****/
+header {
+	padding: 0 0 15px;
+	width: 510px;
+	background: black;
+	float: left;
+}
+header h1{
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 3px 3px 3px white;
+}
+h1, h2 {
+	margin: 0;
+	padding: 15px 20px 0;
+}
+
+/***** Navigation *****/
+nav ul {
+	list-style-type: none;
+	width: 450px;
+	background: black;
+	margin: 0 auto;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+nav ul li {
+	width: 150px;
+	float: left;
+}
+a {
+	text-decoration: none;
+	display: block;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	color: white;
+}
+a:hover {
+	background: white;
+	color: black;
+}
+
+/***** Main Content *****/
+#main {
+	border: 1px black;
+	background: green;
+	width: 593px;
+	float: left;
+}
+#main img {
+	border: solid black 2px;
+	margin: 30px 10px 0px 20px;
+	float: left;
+}
+#main h2 {
+	text-align: center;
+}
+p {
+	font-family: 'Play', sans-serif;
+	margin: 0 20px;
+}
+
+/***** Aside/Favorite Things *****/
+aside {
+	background: green;
+	width: 367px;
+	float: left;
+}
+aside ul {
+	font-family: 'Play', sans-serif;
+}
+aside ul li{
+	list-style-type: katakana;
+}
+
+/***** Image Timeline *****/
+#gallery {
+	background: purple;
+	clear: both;
+}
+#gallery h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#gallery ol {
+	width: 960px;
+	margin: 0 auto;
+	float: left;
+	overflow: hidden;
+}
+#gallery ol li {
+	width: 240px;
+	float: left;
+}
+#gallery img {
+	border: solid black 2px;
+	margin:10px 40px;
+}
+/***** SPACE RESERVED FOR PROJECT INFORMATION *****/
+
+/***** Footer *****/
+footer {
+	background: black;
+	clear: both;
+}
+footer p {
+	color: white;
+	margin-bottom: 0;
+	padding-bottom: 15px;
+}
+footer h2 {
+	color: white;
+}
