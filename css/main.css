@@ -5,7 +5,7 @@ font-family: 'Press Start 2P', cursive;
 font-family: 'Play', sans-serif; */
 
 body {
-	background-image: url("../images/bg_image.jpg");
+	background-image: url("../images/bg_image2.jpg");
 	width: 960px;
 	margin: 0 auto;
 }
@@ -20,9 +20,10 @@ header {
 header h1{
 	color: white;
 	font-family: 'Press Start 2P', cursive;
-	text-shadow: 3px 3px 3px white;
+	text-shadow: 3px 3px 3px grey;
 }
 h1, h2 {
+	font-family: 'Press Start 2P', cursive;
 	margin: 0;
 	padding: 15px 20px 0;
 }
@@ -72,6 +73,7 @@ a:hover {
 p {
 	font-family: 'Play', sans-serif;
 	margin: 0 20px;
+	padding: 0 0 20px;
 }
 
 /***** Aside/Favorite Things *****/
@@ -89,7 +91,7 @@ aside ul li{
 
 /***** Image Timeline *****/
 #gallery {
-	background: purple;
+	background: rgba(0, 255, 0, .5);
 	clear: both;
 }
 #gallery h2 {
