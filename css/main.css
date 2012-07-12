@@ -1,8 +1,8 @@
-/***** Formatting *****/
-
 /***** Fonts *****
 font-family: 'Press Start 2P', cursive;
-font-family: 'Play', sans-serif; */
+font-family: 'Play', sans-serif;
+light green: #39b44a
+dark green: #1a7a30 */
 
 body {
 	background-image: url("../images/bg_image2.jpg");
@@ -14,11 +14,11 @@ body {
 header {
 	padding: 0 0 15px;
 	width: 510px;
-	background: black;
+	background: white;
 	float: left;
 }
 header h1{
-	color: white;
+	color: black;
 	font-family: 'Press Start 2P', cursive;
 	text-shadow: 3px 3px 3px grey;
 }
@@ -32,7 +32,7 @@ h1, h2 {
 nav ul {
 	list-style-type: none;
 	width: 450px;
-	background: black;
+	background: white;
 	margin: 0 auto;
 	padding: 0;
 	float: left;
@@ -42,23 +42,23 @@ nav ul li {
 	width: 150px;
 	float: left;
 }
-a {
+nav a {
 	text-decoration: none;
 	display: block;
 	height: 62px;
 	line-height: 62px;
 	text-align: center;
-	color: white;
-}
-a:hover {
-	background: white;
 	color: black;
+}
+nav a:hover {
+	background: #1a7a30;
+	color: white;
 }
 
 /***** Main Content *****/
 #main {
 	border: 1px black;
-	background: green;
+	background: #39b44a;
 	width: 593px;
 	float: left;
 }
@@ -76,10 +76,11 @@ p {
 	padding: 0 0 20px;
 }
 
-/***** Aside/Favorite Things *****/
+/***** Aside/Favorite Things/Contact Me *****/
 aside {
-	background: green;
+	background: #39b44a;
 	width: 367px;
+	min-height: 534px;
 	float: left;
 }
 aside ul {
@@ -88,10 +89,56 @@ aside ul {
 aside ul li{
 	list-style-type: katakana;
 }
+aside a{
+	margin: 250px, 183px;
+}
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+.green {
+	color: black;
+	border: solid 1px #538312;
+	background: #64991E;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7DB72F), to(#4E7D0E));
+	background: -moz-linear-gradient(top, #7DB72F, #4E7D0E);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+}
+.green:hover {
+	background: black;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6B9D28), to(#436B0C));
+	background: -moz-linear-gradient(top, #6B9D28, #436B0C);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
+}
+.green:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4E7D0E), to(#7DB72F));
+	background: -moz-linear-gradient(top,  #4E7D0E,  #7DB72F);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4E7D0E', endColorstr='#7DB72F');
+}
 
 /***** Image Timeline *****/
 #gallery {
-	background: rgba(0, 255, 0, .5);
+	background: rgba(26, 122, 48, .75);
 	clear: both;
 }
 #gallery h2 {
@@ -112,18 +159,17 @@ aside ul li{
 	border: solid black 2px;
 	margin:10px 40px;
 }
-/***** SPACE RESERVED FOR PROJECT INFORMATION *****/
 
 /***** Footer *****/
 footer {
-	background: black;
+	background: white;
 	clear: both;
 }
 footer p {
-	color: white;
+	color: black;
 	margin-bottom: 0;
 	padding-bottom: 15px;
 }
 footer h2 {
-	color: white;
+	color: black;
 }
