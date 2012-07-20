@@ -5,41 +5,41 @@ light green: #39b44a
 dark green: #1a7a30 */
 
 body {
+	font: 100%;/* 16px by default */
 	background-image: url("../images/bg_image2.jpg");
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
-
 /***** Header *****/
 header {
+	overflow: hidden;
 	padding: 0 0 15px;
-	width: 510px;
-	background: white;
+	width: 53.125%; /*510px/960px*/
+	background: #39b44a;
 	float: left;
 }
 header h1{
 	color: black;
 	font-family: 'Press Start 2P', cursive;
-	text-shadow: 3px 3px 3px grey;
 }
 h1, h2 {
 	font-family: 'Press Start 2P', cursive;
 	margin: 0;
-	padding: 15px 20px 0;
+	padding: 15px 20px;
+	text-shadow: 3px 3px 3px grey;
 }
-
 /***** Navigation *****/
 nav ul {
 	list-style-type: none;
-	width: 450px;
-	background: white;
+	width: 46.875%;/*450px/960px*/
+	background: #39b44a;
 	margin: 0 auto;
 	padding: 0;
 	float: left;
 	overflow: hidden;
 }
 nav ul li {
-	width: 150px;
+	width: 33.333333333333333333333333333333%;/*150px/450px*/
 	float: left;
 }
 nav a {
@@ -54,19 +54,24 @@ nav a:hover {
 	background: #1a7a30;
 	color: white;
 }
-
 /***** Main Content *****/
-#main {
-	border: 1px black;
+#wrapper {
+	overflow: hidden;
+	width: 100%;
 	background: #39b44a;
-	width: 593px;
+	min-height: 615px;
+}
+#main {
+	width: 61.770833333333333333333333333333%;/*593px/960px*/
 	float: left;
 }
 #main img {
 	border: solid black 2px;
-	margin: 30px 10px 0px 20px;
+	margin: 42px 10px 0px 20px;
 	float: left;
+	max-width: 100%;
 }
+#r_main_img { width: 25.295109612141652613827993254637%; }/*150px/593px*/
 #main h2 {
 	text-align: center;
 }
@@ -75,11 +80,9 @@ p {
 	margin: 0 20px;
 	padding: 0 0 20px;
 }
-
 /***** Aside/Favorite Things/Contact Me *****/
 aside {
-	background: #39b44a;
-	width: 367px;
+	width: 38.229166666666666666666666666667%;/*367px/960px*/
 	min-height: 534px;
 	float: left;
 }
@@ -88,9 +91,6 @@ aside ul {
 }
 aside ul li{
 	list-style-type: katakana;
-}
-aside a{
-	margin: 250px, 183px;
 }
 .button {
 	display: inline-block;
@@ -135,34 +135,39 @@ aside a{
 	background: -moz-linear-gradient(top,  #4E7D0E,  #7DB72F);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4E7D0E', endColorstr='#7DB72F');
 }
-
 /***** Image Timeline *****/
 #gallery {
+	overflow: hidden;
 	background: rgba(26, 122, 48, .75);
 	clear: both;
+	min-height: 250px;
 }
 #gallery h2 {
 	text-align: center;
 	padding-bottom: 20px;
 }
-#gallery ol {
-	width: 960px;
-	margin: 0 auto;
+.r_img { 
 	float: left;
-	overflow: hidden;
+	width: 15.9375%;/*153px/960px*/
+	margin: 0 30px 15px 30px;
+	background-color: #1a7a30;
+	padding: 10px;
+	border-top: 1px solid #999;
+	border-right: 2px solid #555;
+	border-bottom: 2px solid #555;
+	border-left: 1px solid #999;
 }
-#gallery ol li {
-	width: 240px;
-	float: left;
+div.r_img img { 
+	max-width: 100%;
+	border-top: 2px solid #555;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-left: 2px solid #555;
+	float: left;	
 }
-#gallery img {
-	border: solid black 2px;
-	margin:10px 40px;
-}
-
 /***** Footer *****/
 footer {
-	background: white;
+	background: #ddd;
 	clear: both;
 }
 footer p {
@@ -173,3 +178,19 @@ footer p {
 footer h2 {
 	color: black;
 }
+
+/***** Media Queries *****/ /* INCOMPLETE: I had difficulties getting this to work */
+	
+	/*Tablet Portrait size to standard 960 (devices and browsers) */
+	/*@media screen and (min-width:768px)and(max-width:959px){
+		#wrapper { background-color: blue; }
+	}
+	
+	/*Mobile Landscape size to Tablet Portrait size (devices and browsers) */
+	/*@media only screen and (min-width:480px)and(max-width:767px){
+		#wrapper { background-color: red; }
+	}
+	/*Mobile Portrait size to Mobile Landscape size (devices and browsers) */
+/*	@media only screen and (min-width:479px){
+		#wrapper { background-color: orange; }*/
+	}
