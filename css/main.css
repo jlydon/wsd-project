@@ -3,9 +3,8 @@ font-family: 'Press Start 2P', cursive;
 font-family: 'Play', sans-serif;
 light green: #39b44a
 dark green: #1a7a30 */
-
 body {
-	font: 100%;/* 16px by default */
+	font: 100%;/* 16px by default, causes css validation error */
 	background-image: url("../images/bg_image2.jpg");
 	max-width: 960px;
 	margin: 0 auto;
@@ -135,12 +134,32 @@ aside ul li{
 	background: -moz-linear-gradient(top,  #4E7D0E,  #7DB72F);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4E7D0E', endColorstr='#7DB72F');
 }
+/***** My Favorite Game *****/
+#tf2 {
+	overflow: hidden;
+	background-color: #1a7a30;
+	clear: both;
+}
+#tf2 h2 { text-align: center; }
+#tf2 img { 
+	width: 90%;
+	padding-left: 2.5em
+}
+p.text-padding {
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
+}
 /***** Image Timeline *****/
 #gallery {
+	border: 1px solid #000;
 	overflow: hidden;
 	background: rgba(26, 122, 48, .75);
 	clear: both;
-	min-height: 250px;
+	/*min-height: 250px;*/
 }
 #gallery h2 {
 	text-align: center;
@@ -165,6 +184,42 @@ div.r_img img {
 	border-left: 2px solid #555;
 	float: left;	
 }
+/***** Table & Form *****/
+#sign_up {
+	background-color: #39b44a;
+	overflow: hidden;
+}
+#sign_up h2, #sign_up p {
+	text-align: center;
+}
+#table_section {
+	float: left;
+	padding-left: 1em;
+}
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid #000;
+	text-align: center;
+	padding: 0.3em;
+}
+th {
+	text-align: left;
+	padding: 0.3em;
+}
+#form_section {
+	padding-right: 1em;
+	padding-bottom: 1em;
+	float: right;
+}
+.odd_row {
+	background-color: #1a7a30;
+}
+input:focus {
+	background: #1a7a30;
+}
 /***** Footer *****/
 footer {
 	background: #ddd;
@@ -179,18 +234,39 @@ footer h2 {
 	color: black;
 }
 
-/***** Media Queries *****/ /* INCOMPLETE: I had difficulties getting this to work */
+/***** Media Queries *****/
 	
-	/*Tablet Portrait size to standard 960 (devices and browsers) */
-	/*@media screen and (min-width:768px)and(max-width:959px){
-		#wrapper { background-color: blue; }
+	/*Tablet Portrait size to standard 960 (devices and browsers)*/
+	@media screen and ( min-width:768px ) and (max-width:958px){
+		header h1 { font-size: 1.09em; }
 	}
-	
 	/*Mobile Landscape size to Tablet Portrait size (devices and browsers) */
-	/*@media only screen and (min-width:480px)and(max-width:767px){
-		#wrapper { background-color: red; }
+	@media only screen and ( min-width:480px ) and ( max-width:767px ){
+		header h1 { font-size: 1.09em; }
+		.r_img { margin: 0 115px 15px 115px; }
+		#table_section {
+			float: none;
+			margin: 0 auto;
+		}
+		#form_section {
+			margin: 0 auto;
+			float: none;
+			padding-left: 1em;
+		}
 	}
 	/*Mobile Portrait size to Mobile Landscape size (devices and browsers) */
-/*	@media only screen and (min-width:479px){
-		#wrapper { background-color: orange; }*/
+	@media only screen and ( max-width:479px ){
+		header h1 { font-size: 1.09em; }
+		header { float: none; }
+		nav ul {  float: none; }
+		.r_img { margin: 0 60px 15px 60px; }
+		#table_section {
+			float: none;
+			margin: 0 auto;
+		}
+		#form_section {
+			float: none;
+			margin: 0 auto;
+			padding: 0;
+		}
 	}

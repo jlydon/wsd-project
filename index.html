@@ -9,7 +9,6 @@
 </head>
 <body>
 	<div id="wrapper">
-	<div id="header_bg">
 	<header>
 		<h1>I Love Myself!</h1>
 	</header>	
@@ -17,11 +16,10 @@
 	<nav>	
 		<ul>
 			<li><a href="#main">About me!</a></li>
-			<li><a href="#gallery">A gallery of me!</a></li>
-			<li><a href="#about">About this site</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#about">About</a></li>
 		</ul>	
 	</nav>
-	</div>
 	
 	<section id="main">
 		<div id="r_main_img"><img src="images/meedited.jpg" alt="a picture of me"></div>
@@ -67,7 +65,7 @@
 	</div>
 	
 	<section id="gallery">
-		<h2>Gallery</h2>
+		<h2>Timeline Gallery</h2>
 			<div class="r_img"><img src="images/baby_me_edited.jpg" alt="Baby me"><br>
 			1987
 			</div>
@@ -81,6 +79,109 @@
 			2012
 			</div>
 	</section>
+	
+	<section id="tf2">
+		<h2>My Favorite Game!</h2>
+		<img src="images/tf2logo.png" alt="team fortress 2 logo">
+		<p class="text-padding">Team Fortress 2 is a free-to-play team-based first-person shooter (FPS) multiplayer 
+		video game developed by Valve Corporation. It is a sequel to the original mod Team Fortress 
+		based on the Source engine. It was first released as part of the video game compilation The
+		Orange Box on October 10, 2007 for Windows and the Xbox 360. A PlayStation 3 version then
+		followed on November 22, 2007. The game was later released as a standalone package for 
+		Windows on April 9, 2008, and for Mac OS X two years later. Team Fortress 2 is distributed 
+		online through the Steam system, while retail distribution was handled by Electronic Arts.
+		On June 23, 2011, the game became a free-to-play title, supported by microtransactions for
+		unique in-game equipment through Steam. The development of Team Fortress 2 is led by John 
+		Cook and Robin Walker, who originally created the Team Fortress modification for Quake in 
+		1996. The game was announced in 1998, and was first powered by Valve's GoldSrc engine, but 
+		this changed as it passed through several different design stages. In 1999, the game appeared 
+		to be deviating from its predecessors by pursuing a more realistic and militaristic style of 
+		gameplay, but its design metamorphosed over an eventual nine-year development period. The final 
+		rendition sports cartoon style visuals influenced by the art of J. C. Leyendecker, Dean Cornwell 
+		and Norman Rockwell and is powered by the Source engine. The game itself revolves around two teams, 
+		each with access to nine distinct characters, battling in a variety of game modes set in different 
+		environments or maps, often with a factory-warehouse theme. The game is set in an alternate 1968, and 
+		is a cartoonish take on Sixties Espionage. The maps and music have a Sixties spy movie feel to them, 
+		taking elements from James Bond (especially Doctor No and You Only Live Twice), Get Smart, The Man 
+		from U.N.C.L.E, Austin Powers (which itself is a parody of the same generation), and The Avengers. 
+		The game also contains elements from Wild West stories, and Westerns, as well as elements from World 
+		War 2 movies</p>
+	</section>
+	
+	<div id="sign_up">
+	<div id="table_section">
+	<h2>Sign-up Plans</h2>
+	<p>to hang out with me!</p>
+	<table summary="Sign up plans to hang out with me."> <!-- another deprecated keyword (summary)-->
+		<tr>
+			<th>You Recieve:</th>
+			<th>Free</th>
+			<th>Basic $4.99</th>
+			<th>Full $9.99</th>
+		</tr>
+		<tr class="odd_row">
+			<td>High-Fives</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<td>Sleepovers</td>
+			<td></td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr class="odd_row">
+			<td>Pillow Fights</td>
+			<td></td>
+			<td></td>
+			<td>X</td>
+		</tr>
+	</table>
+	</div>
+	
+	<div id="form_section">
+	<h2>Sign up now!</h2>
+	<form method="post" action="forms.html">
+		<fieldset>
+			<legend>Your Info</legend>
+				<div>
+					<label for="name_first">First Name</label>
+					<input type="text" name="name_first" id="name_first" />
+				</div>
+				<div>
+					<label for="name_last">Last Name</label>
+					<input type="text" name="name_last" id="name_last" />
+				</div>
+				<div>
+					<label for="phone">Phone Number</label>
+					<input type="text" name="phone" id="phone" />
+				</div>
+				<div>
+					<label for="email">Email Address</label>
+					<input type="text" name="email" id="email" />
+				</div>
+				<div>
+					<label for="about_you">About You</label>
+					<textarea rows="10" cols="50" name="about_you" id="about_you"></textarea>
+				</div>
+				<div>
+					<label for="sub_type">Subscription Plan</label>
+					<select name="sub_type" id="sub_type">
+						<option>Free</option>
+						<option>Basic ($4.99)</option>
+						<option>Full ($9.99)</option>
+					</select>
+				</div>
+				<div>
+					<input type="checkbox" name="promos" id="promos" />
+					<label for="promos">Contact me with future promotions.</label>
+				</div>
+				<input type="submit">
+		</fieldset>
+	</form>
+	</div>
+	</div>
 	
 	<footer id="about">
 		<h2>About</h2>
